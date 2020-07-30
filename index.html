@@ -1,1 +1,88 @@
 
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Attention Distillation for Learning Video Representations</title>
+<meta name="generator" content="Nested http://nestededitor.sourceforge.net/">
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+    menuSettings: {zoom: "Double-Click", zscale: "300%"},
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]},
+    MathMenu: {showRenderer: false},
+    "HTML-CSS": {
+        availableFonts: ["TeX"],
+        preferredFont: "TeX",
+        imageFont: null
+    }
+  });
+</script>
+<style type="text/css">
+    body { background-color: White; font-family: Helvetica, Futura, "Trebuchet MS", sans-serif; width:900px; margin:0 auto;}
+    h1 { color: black; font-family:  Helvetica, Futura, "Trebuchet MS", sans-serif; font-size: 27px; }
+    h2 { color: black; font-family:  Helvetica, Futura, "Trebuchet MS", sans-serif; font-size: 22px}
+    h4 { color: black; font-family:  Helvetica, Futura, "Trebuchet MS", sans-serif; font-size: 15px; font-weight:normal}
+    p { color: black; font-family: Helvetica, Futura, "Trebuchet MS", sans-serif;}
+</style>
+</head>
+
+
+<body><div id="header" class="header" align="center">
+<h1>Attention Distillation for Learning Video Representations</h1>
+
+<table style="width:90%">
+  <tbody><tr>
+    <td style="text-align:center"><font size="4"><a href="https://aptx4869lm.github.io/">Miao Liu</a><sup>1</sup> </font></td>
+    <td style="text-align:center"><font size="4">Xin Chen</font><sup>3</sup> </td>
+    <td style="text-align:center"><font size="4"><a href="https://sites.google.com/view/yunzhang/home">Yun Zhang</a><sup>1</sup> </td>    
+    <td style="text-align:center"><font size="4"><a href="https://www.biostat.wisc.edu/~yli/">Yin Li</a><sup>2</sup> </td>
+    <td style="text-align:center"><font size="4"><a href="https://rehg.org/">James Rehg</a><sup>1</sup></td>
+  </tr>
+  <tr>
+    <td></td> 
+    <td style="text-align:center"><sup>1</sup>Georgia Tech</td> 
+    <td style="text-align:center"><sup>2</sup>University of Wisconsin<span>&#8722;</span>Madison</td>
+    <td style="text-align:center"><sup>3</sup>KuasiShou Technology</td>
+  </tr>
+</tbody></table>
+
+<p>
+  <!-- <a href="??" style="font-size: 24px;">[code]</a> -->
+  <font style="font-size: 24px;">[code]</font>
+  <a href="https://arxiv.org/pdf/1904.03249.pdf" style="font-size: 24px;">[arxiv]</a> 
+</p>
+
+
+</div>
+
+<div style="text-align: center;">
+  <img src="teaser.png"  style="width:600px;height:450px;">
+</div>
+
+<h4>
+Overview of our method. Our model (c) takes multiple RGB frames as inputs and adopts 3D convolutional network as backbone. Our model outputs two attention maps using the attention module (b), based on which the action labels are predicted. The motion map is learned by mimicking the attention from a reference flow network (a). And the appearance map is learned to highlight discriminative regions for recognition. These two maps are used to create spatio-temporal feature representations from video frames for action recognition.
+</h4>
+
+<h2>Abstract</h2>
+We address the challenging problem of learning motion representations using deep models for video recognition. To this end, we make use of attention modules that learn to highlight regions in the video and aggregate features for recognition. Specifically, we propose to leverage output attention maps as a vehicle to transfer the learned representation from a flow network to an RGB network. We systematically study the design of attention modules, develop a novel method for attention distillation, and evaluate our method on major action recognition benchmarks. Our results suggest that our method improves the performance of the baseline RGB network by a significant margin while maintains similar efficiency. Moreover, we demonstrate that attention serves a more robust tool for knowledge distillation in video domain. We believe our method provides a step forward towards learning motion-aware representations in deep models and valuable insights for knowledge distillation.
+<br>
+
+
+<h2 id="bibtex">Cite</h2>
+If you find this work useful in your own research, please consider citing:
+<pre>
+@inproceedings{liu2019paying,
+  title={Attention distillation for learning video representations},
+  author={Liu, Miao and Chen, Xin and Zhang, Yun and Li, Yin and Rehg, James M},
+  booktitle={BMVC},
+  year={2020}
+}
+</pre>
+
+
+<h2 id="Contact">Contact</h2>
+For questions about paper, please contact mliu328 at gatech dot edu
+<br>
+</body></html>
